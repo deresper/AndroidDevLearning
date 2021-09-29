@@ -1,5 +1,5 @@
 # AndroidDevLearning
-Mobile Development Learning Projects by Group 20 - K19 HCMUS
+Mobile Development Learning Projects by Group 20 - HCMUS.
 Participants:
 - 19120189
 - 19120190
