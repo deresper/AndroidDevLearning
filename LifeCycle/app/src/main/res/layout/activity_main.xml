@@ -8,7 +8,7 @@
     <EditText android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Pick background (red, green, blue, white)"
+        android:hint="Pick background (dat, van, hanh, hao, khang)"
         android:ems="10" />
 
     <Button
