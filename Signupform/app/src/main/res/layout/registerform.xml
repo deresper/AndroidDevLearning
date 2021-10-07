@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/myScreen" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools” android:id=“@+id/myScreen1"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:id="@+id/head"
+        android:layout_width="fill_parent" android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+    </LinearLayout>
+
+        <LinearLayout android:id="@+id/u"
+            android:layout_width="fill_parent" android:layout_height="50dp"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft= "40dp"
+                android:layout_marginRight= "40dp"
+                android:text="USERNAME"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="287dp" />
+            <EditText
+                android:id="@+id/username_fill"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/p"
+            android:layout_width="fill_parent" android:layout_height="50dp"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft= "40dp"
+                android:layout_marginRight= "40dp"
+                android:text="PASSWORD"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="287dp" />
+
+            <EditText
+                android:id="@+id/password_fill"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=""
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/r"
+            android:layout_width="fill_parent" android:layout_height="50dp"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/retype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft= "40dp"
+                android:layout_marginRight= "40dp"
+                android:text="RETYPE"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="287dp" />
+
+            <EditText
+                android:id="@+id/retype_fill"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:hint=""
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/date1"
+            android:layout_width="fill_parent" android:layout_height="50dp"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:text="BIRTHDAY"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="287dp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/date2"
+            android:layout_width="fill_parent" android:layout_height="50dp"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+            <EditText
+                android:layout_marginLeft="40dp"
+                android:id="@+id/birthday_fill"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:enabled='false'
+                android:ems="10"
+                android:hint="" />
+
+            <Button
+                android:id="@+id/btnSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="SELECT"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/gender1"
+            android:layout_width="fill_parent" android:layout_height="50dp"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft= "40dp"
+                android:layout_marginRight= "40dp"
+                android:layout_marginTop="30dp"
+                android:text="GENDER"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="287dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/gender2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:text="MALE" />
+                <RadioButton
+                    android:id="@+id/radFeMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FEMALE" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/hobby1"
+            android:layout_width="fill_parent" android:layout_height="50dp"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/hobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:text="HOBBIES"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="287dp" />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/hoby2"
+
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <CheckBox
+            android:id="@+id/cbTeniis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="TENNIS" />
+
+        <CheckBox
+            android:id="@+id/cbFutbal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FUTBAL" />
+
+        <CheckBox
+            android:id="@+id/cbOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTHER" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date3"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="392dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="RESET" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="SIGNUP" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
